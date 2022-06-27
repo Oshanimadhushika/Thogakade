@@ -26,6 +26,6 @@ public class Orders {
     @CreationTimestamp
     private LocalDate date;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "orders")
    private List<OrderDetail>orderDetails= new ArrayList<>();
 }

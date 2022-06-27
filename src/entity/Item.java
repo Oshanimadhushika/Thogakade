@@ -10,15 +10,15 @@ import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
+@Entity
 public class Item {
     @Id
     private String code;
     private String description;
-    private String unitPrice;
+    private double unitPrice;
     private int qtyOnHand;
 
     @OneToMany(mappedBy = "item")
